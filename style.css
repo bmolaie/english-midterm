@@ -1,229 +1,295 @@
-p {
-color: NavajoWhite;
-font-style: normal;
-font-family: "Courier New", Courier, monospace;
-font-weight: normal;
-}
-
- body{
-   background-color: black;
-   color: white;
- }
-
- h1{
-   color: orange;
-   font-family: Luminari, fantasy;
-  text-align: center;
+h1 {
+  font-family: Poppins;
   font-weight: bold;
-  text-decoration: inherit;
- }
-
- h2{
-   color: orange;
-  border-bottom: red;
+  color: black;
+  text-align: center;
+  font-size: 25pt;
+}
+* {
+  font-size: 10pt;
+}
+h3, h2 {
+  font-family: Poppins;
+  color: darkblue;
+  text-align: center;
+}
+p {
+  font-family: Poppins;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+body {
+  background-color: #AFEEEE;
 }
 
-h3{
-  color:white;
+table {
+  width: 60%;
+  margin-left:300px;
+  background-color: aliceblue;
 }
-
- h4{
-   color:white;
- }
-
- footer{
-   color: white;
-  font-size: 12px;
- }
-
- ul{
-   color:white;
-   font-family: "Courier New", Courier, monospace;
-   background-color: rgb(153, 51, 153);
- }
-
- ol{
-   color:white;
- font-family: "Courier New", Courier, monospace;
+th, td {
+    align-items: center;
+    border-width: thin;
 }
-
- table{
-   color: black;
-   border-color: rgb(153, 51, 153);
-   text-align: center;
-   margin: 0 auto;
-   background-color: orange;
-   border: 5px;
- }
-
-/* Class Selectors*/
-
-p.paragraph{
-  text-align: left;
+th, td {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    text-align: center;
+    text-transform: uppercase;
 }
-
- table.taskbar{
-   border-color: lime;
-   background-color: black
-   color: orange;
-   border-style: groove;
-   overflow:
- }
-
-img.decoration{
-  margin: 0 auto;
-}
-
-.center{
+ul {
+  list-style-type: square;
+  font-family: Poppins;
+  align: center;
+  border-bottom: 2px solid teal;
+  border-top: 2px solid teal;
+  border-left: 2px solid teal;
+  border-right: 2px solid teal;
+  margin-left: 250px;
+  margin-right:250px;
+  }
+ol {
+  font-family: Poppins;
+  align: center;
+  border-bottom: 2px solid teal;
+  border-top: 2px solid teal;
+  border-left: 2px solid teal;
+  border-right: 2px solid teal;
+  margin-left: 250px;
+  margin-right:250px;
+  }
+img[src="Images/tennis.png"]{
   display: block;
-  margin: 0 auto;
-}
-
- a#taskbar{
-   color: orange;
-   background-color: black;
- }
-
-h4.history{
-  color: DarkOrange);
-}
-
-img.border{
-  border: 5px solid NavajoWhite
-  border-radius: 8px;
-}
-.gradient{
-background-image: linear-gradient(indigo, black);
-}
-
-/*ID selectors*/
- #gradient{
-   background-image: linear-gradient(orange, DarkGoldenrod);
- }
-
- #video{
-border-style: dashed;
-border-color: lawngreen;
-color: lawngreen;
-background-color:black;
-hover: rgb(153, 51, 153);
-float: right
-margin-top:100px;
-margin-bottom:100px;
- }
-
-#video:hover{
-   background-color: indigo;
- /*picture dimensions*/
-
-#100{
-height: 100px;
-}
-
-.h100{
-  height: 100px;
-}
-
- .heightthree{
-height: 200px;
-}
-
-  #h300{
-height: 300px;
-}
-
-
-
- }
-/*pseudo-classes*/
-a:hover{
-   background-color: orange;
-   color:lime;
- }
-
- a#taskbar:hover{
-color:lime;
- }
-
-a:visited{
-  background-color:black
- color: orange;
-}
-
-li:nth-child(2n+1){
-background-color: DarkGoldenrod;
- color: yellow;
-}
-
-/*combinators*/
-h4 + p{
-background-color: Indigo;
-}
-
-ol > li{
-color: orange;
-background-color: black;
- font-family: "Courier New", Courier, monospace;
-}
-
-tbody > img{
-  height: 100px;
-  width: 125;
-}
-
-div p{
-color: NavajoWhite;
- font-family: FreeMono, monospace;
-}
-
-/*Universal Selector*/
-*.costume{
-height:150px;
-border: NavajoWhite dotted 10px;
-}
-
-.jason{
-  position: fixed;
-}
-
-.oompa{
-  float: right;
-}
-
-
-
-
-img.height2{
+  margin-left: auto;
+  margin-right: auto;
   height: 200px;
-  border: NavajoWhite solid 8px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
 }
-
-img.tablepic{
-  height: 100px;
-  width: 125px;
+p.border {
+  border-top:5px solid aliceblue;
+  border-right:5px aliceblue;
+  border-bottom: 5px aliceblue;
+  border-left: 5px aliceblue;
 }
-
-img#h300{
-  height: 300px;
-  border: lime outset 10px;
-  border-radius: 20px
+p.font {
+  font-style: italic;
 }
-
-
-/*attribute selectors*/
-
-a[target="_blank"]{
-  font-style: oblique;
+table.highlight {
+  background-color: aliceblue;
 }
-
-a[href="mailto:info@example.com"]{
-color:SpringGreen;
+table {
+  border-collapse: collapse;
 }
-
-a[href^="http"]{
-  color: DeepPink;
+#underline {
+  text-decoration: underline;
 }
-
-img[href$=".gif"]{
-  margin-bottom: 30px;
+#corner {
+  border-radius: 10px;
+  padding: 20px;
+}
+* [lang^=en] {
+  background-color: #F0FFFF;
+}
+a:hover {
+  color:red;
+}
+p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+a:visited {
+  color: green;
+}
+a:link {
+  color:blue;
+}
+#home {
+  border-collapse: collapse;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  background-color: #ff9b9b;
+}
+#page1 {
+  border-collapse: collapse;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  background-color: #ff9b9b;
+}
+#page2 {
+  border-collapse: collapse;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  background-color: #ff9b9b;
+}
+#page3 {
+  border-collapse: collapse;
+  border: 1px solid black;
+  color: black;
+  border-radius: 5px;
+  background-color: #ff9b9b;
+}
+#underline {
+  font-size: 20pt;
+}
+.footer {
+  font-size: 10pt;
+  color: black;
+}
+.footer:hover{
+  color: blue;
+  font-size:15pt;
+}
+footer {
+  font-size: 10pt;
+}
+#moreinfo {
+  font-size: 15pt;
+  color: black;
+}
+#moreinfo:hover{
+  color: blue;
+}
+.highlight:nth-child(even) {
+  background-color: #c2e8ed
+}
+img[src="Images/tennis_diagram.gif"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/Federer.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/player.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/king.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/venus.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/serena.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/ashe.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/ashe.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/slam.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/usopen.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/paris.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/wimbledon.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
+}
+img[src="./Images/australia.jpg"]{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: #2e5a60;
 }
